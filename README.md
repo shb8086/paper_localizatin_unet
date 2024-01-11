@@ -28,6 +28,18 @@ If you use this dataset or refer to the research paper in your work, please cons
 ```
 S. B. Dizaj, M. Soheili and A. Mansouri, "A New Image Dataset for Document Corner Localization," 2020 International Conference on Machine Vision and Image Processing (MVIP), Iran, 2020, pp. 1-4, doi: 10.1109/MVIP49855.2020.9116896.
 ```
+or 
+```json
+{
+"author": "S. B. Dizaj and M. Soheili and A. Mansouri",
+"title": "A New Image Dataset for Document Corner Localization",
+"conference": "2020 International Conference on Machine Vision and Image Processing (MVIP)",
+"location": "Iran",
+"year": 2020,
+"pages": "1-4",
+"doi": "10.1109/MVIP49855.2020.9116896"
+}
+```
 
 ## U-Net Implementation for Testing
 
