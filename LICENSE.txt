@@ -1,0 +1,21 @@
+Document Corner Localization Dataset License
+
+This dataset is provided under the following terms:
+
+1. You are free to:
+   - Use the dataset for research and educational purposes.
+   - Share and distribute the dataset.
+   - Modify and adapt the dataset for your needs.
+
+2. You must, when using this dataset:
+   - Cite the original research paper as follows:
+     "S. B. Dizaj, M. Soheili, and A. Mansouri, 'A New Image Dataset for Document Corner Localization,' 2020 International Conference on Machine Vision and Image Processing (MVIP), Iran, 2020, pp. 1-4, doi: 10.1109/MVIP49855.2020.9116896."
+
+3. You can not:
+   - Use the dataset for commercial purposes without obtaining explicit permission.
+   - Hold the authors or contributors responsible for any damages resulting from the use of the dataset.
+
+By using this dataset, you agree to abide by these terms and conditions. If you do not agree with these terms, you may not use the dataset.
+
+For any questions or additional permissions, please contact the authors.
+
