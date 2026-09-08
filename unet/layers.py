@@ -19,7 +19,8 @@ author: jakeret
 '''
 from __future__ import print_function, division, absolute_import, unicode_literals
 
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior()
 
 def weight_variable(shape, stddev=0.1, name="weight"):
     initial = tf.truncated_normal(shape, stddev=stddev)

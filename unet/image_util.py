@@ -40,7 +40,7 @@ class BaseDataProvider(object):
 
     def __init__(self, a_min=None, a_max=None):
         self.a_min = a_min if a_min is not None else -np.inf
-        self.a_max = a_max if a_min is not None else np.inf
+        self.a_max = a_max if a_max is not None else np.inf
 
     def _load_data_and_label(self):
         data, label = self._next_data()
@@ -64,7 +64,7 @@ class BaseDataProvider(object):
             # It is the responsibility of the child class to make sure that the label
             # is a boolean array, but we a chech here just in case.
             if label.dtype != 'bool':
-                label = label.astype(np.bool)
+                label = label.astype(bool)
 
             labels[..., 1] = label
             labels[..., 0] = ~label
@@ -201,6 +201,6 @@ class ImageDataProvider(BaseDataProvider):
         label_name = image_name.replace(self.data_suffix, self.mask_suffix)
 
         img = self._load_file(image_name, np.float32)
-        label = self._load_file(label_name, np.bool)
+        label = self._load_file(label_name, bool)
 
         return img,label

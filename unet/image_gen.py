@@ -22,7 +22,7 @@ author: jakeret
 from __future__ import print_function, division, absolute_import, unicode_literals
 
 import numpy as np
-from tf_unet.image_util import BaseDataProvider
+from unet.image_util import BaseDataProvider
 
 class GrayScaleDataProvider(BaseDataProvider):
     channels = 1
@@ -62,8 +62,8 @@ def create_image_and_label(nx,ny, cnt = 10, r_min = 5, r_max = 50, border = 92, 
     
     
     image = np.ones((nx, ny, 1))
-    label = np.zeros((nx, ny, 3), dtype=np.bool)
-    mask = np.zeros((nx, ny), dtype=np.bool)
+    label = np.zeros((nx, ny, 3), dtype=bool)
+    mask = np.zeros((nx, ny), dtype=bool)
     for _ in range(cnt):
         a = np.random.randint(border, nx-border)
         b = np.random.randint(border, ny-border)
@@ -79,14 +79,14 @@ def create_image_and_label(nx,ny, cnt = 10, r_min = 5, r_max = 50, border = 92, 
     label[mask, 1] = 1
     
     if rectangles:
-        mask = np.zeros((nx, ny), dtype=np.bool)
+        mask = np.zeros((nx, ny), dtype=bool)
         for _ in range(cnt//2):
             a = np.random.randint(nx)
             b = np.random.randint(ny)
             r =  np.random.randint(r_min, r_max)
             h = np.random.randint(1,255)
     
-            m = np.zeros((nx, ny), dtype=np.bool)
+            m = np.zeros((nx, ny), dtype=bool)
             m[a:a+r, b:b+r] = True
             mask = np.logical_or(mask, m)
             image[m] = h

@@ -1,6 +1,7 @@
 
 import os
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior()
 
 from tensorflow.python.tools import freeze_graph
 from deeplab import common

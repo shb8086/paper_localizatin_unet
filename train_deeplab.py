@@ -1,6 +1,7 @@
 
 import six
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior()
 from tensorflow.python.ops import math_ops
 from deeplab import common
 from deeplab import model
@@ -43,7 +44,8 @@ flags.DEFINE_boolean(
     'Save sample inputs, labels, and semantic predictions as '
     'images to summary.')
 flags.DEFINE_string('profile_logdir', None,
-                    'Where the profile files are stored.')flags.DEFINE_enum('learning_policy', 'poly', ['poly', 'step'],
+                    'Where the profile files are stored.')
+flags.DEFINE_enum('learning_policy', 'poly', ['poly', 'step'],
                   'Learning rate policy for training.')
 flags.DEFINE_float('base_learning_rate', .0001,
                    'The base learning rate for model training.')

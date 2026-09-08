@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# Virtual environments
+venv/
+env/
+.env/
+.venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+*.egg
+
+# Testing
+.pytest_cache/
+.coverage
+
+# IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# macOS
+.DS_Store
+
+# TensorFlow / model training artifacts
+*.ckpt
+*.ckpt.index
+*.ckpt.meta
+*.ckpt.data-*
+checkpoint
+events.out.tfevents.*
+train/
+eval/
+prediction/
+*.npy
+
+# Exported models (large ones should use Git LFS or external storage)
+# corner_locator.pb is kept intentionally — it is the pre-trained inference model
+four_point.pb

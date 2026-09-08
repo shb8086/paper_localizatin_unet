@@ -50,7 +50,7 @@ PASCAL_DATASET="${WORK_DIR}/${DATASET_DIR}/${PASCAL_FOLDER}/tfrecord"
 
 # Train 10 iterations.
 NUM_ITERATIONS=10
-python "${WORK_DIR}"/train.py \
+python "${WORK_DIR}"/train_deeplab.py \
   --logtostderr \
   --train_split="trainval" \
   --model_variant="xception_65" \
