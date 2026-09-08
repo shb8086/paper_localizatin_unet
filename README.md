@@ -206,14 +206,14 @@ Each CSV has one row per image with the pixel coordinates of the four corners. T
 ## Citation
 
 ```
-S. B. Dizaj, M. Soheili and A. Mansouri, "A New Image Dataset for Document Corner
+S. Baniadamdizaj, M. Soheili and A. Mansouri, "A New Image Dataset for Document Corner
 Localization," 2020 International Conference on Machine Vision and Image Processing
 (MVIP), Iran, 2020, pp. 1-4, doi: 10.1109/MVIP49855.2020.9116896.
 ```
 
 ```json
 {
-  "author": "S. B. Dizaj and M. Soheili and A. Mansouri",
+  "author": "S. Baniadamdizaj and M. Soheili and A. Mansouri",
   "title": "A New Image Dataset for Document Corner Localization",
   "conference": "2020 International Conference on Machine Vision and Image Processing (MVIP)",
   "location": "Iran",
