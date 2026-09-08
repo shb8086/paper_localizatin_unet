@@ -46,5 +46,5 @@ prediction/
 *.npy
 
 # Exported models (large ones should use Git LFS or external storage)
-# corner_locator.pb is kept intentionally — it is the pre-trained inference model
-four_point.pb
+# corner_locator.pb and four_point.pb are kept intentionally — pre-trained inference models
+# Train them via models/corner_cnn/train_corner.py and models/corner_cnn/train_4point.py

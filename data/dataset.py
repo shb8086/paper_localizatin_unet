@@ -16,11 +16,53 @@ DatasetDescriptor = collections.namedtuple(
         'ignore_label',  # Ignore label value.
     ])
 
+_CITYSCAPES_INFORMATION = DatasetDescriptor(
+    splits_to_sizes={
+        'train_fine': 2975,
+        'train_coarse': 22973,
+        'trainval_fine': 3475,
+        'trainval_coarse': 23473,
+        'val_fine': 500,
+        'test_fine': 1525,
+    },
+    num_classes=19,
+    ignore_label=255,
+)
+
+_PASCAL_VOC_SEG_INFORMATION = DatasetDescriptor(
+    splits_to_sizes={
+        'train': 1464,
+        'train_aug': 10582,
+        'trainval': 2913,
+        'val': 1449,
+    },
+    num_classes=21,
+    ignore_label=255,
+)
+
+_ADE20K_INFORMATION = DatasetDescriptor(
+    splits_to_sizes={
+        'train': 20210,
+        'val': 2000,
+    },
+    num_classes=151,
+    ignore_label=0,
+)
+
+_PAPER_INFORMATION = DatasetDescriptor(
+    splits_to_sizes={
+        'train': 1000,
+        'val': 200,
+    },
+    num_classes=2,
+    ignore_label=255,
+)
+
 _DATASETS_INFORMATION = {
     'cityscapes': _CITYSCAPES_INFORMATION,
     'pascal_voc_seg': _PASCAL_VOC_SEG_INFORMATION,
     'ade20k': _ADE20K_INFORMATION,
-    'paper':_PAPER_INFORMATION ,
+    'paper': _PAPER_INFORMATION,
 }
 
 _FILE_PATTERN = '%s-*'

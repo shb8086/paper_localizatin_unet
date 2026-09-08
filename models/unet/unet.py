@@ -9,10 +9,10 @@ import logging
 import tensorflow.compat.v1 as tf
 tf.disable_v2_behavior()
 
-from unet import util
-from unet.layers import (weight_variable, weight_variable_devonc, bias_variable,
-                         conv2d, deconv2d, max_pool, crop_and_concat, pixel_wise_softmax,
-                         cross_entropy)
+from . import util
+from .layers import (weight_variable, weight_variable_devonc, bias_variable,
+                     conv2d, deconv2d, max_pool, crop_and_concat, pixel_wise_softmax,
+                     cross_entropy)
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s %(message)s')
 
